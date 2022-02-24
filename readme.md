@@ -1,10 +1,7 @@
 ## start keycloak dev mode
 ```sh
-## start with custom image
-docker run --name keycloak-dev -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin keycloak:dev start-dev
+docker-compose up
 
-## start with keycloak official image
-docker run --name keycloak-dev2 -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:17.0.0 start-dev
 ```
 ## Keycloak
 ### Keycloak Login
